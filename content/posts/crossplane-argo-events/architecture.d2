@@ -1,0 +1,38 @@
+repo-template: {
+  icon: https://icons.terrastruct.com/dev%2Fgithub.svg
+  label: GitHub Repo Template
+  shape: image
+}
+
+cluster: {
+  icon: https://icons.terrastruct.com/azure%2F_Companies%2FKubernetes.svg
+  crossplane-github-controller: {
+    icon: https://raw.githubusercontent.com/crossplane/artwork/ea00e915bc5d2be45ea775fb2bccce772bcba041/logo/icon.svg
+  }
+  kyverno: {
+    icon: https://raw.githubusercontent.com/cncf/artwork/9def8b1c9c988d053b82be7d82c5a92f3ec7f54a/projects/kyverno/icon/color/kyverno-icon-color.svg
+  }
+  repo-resource
+  argo-events: {
+    icon: https://icon.icepanel.io/Technology/svg/Argo-CD.svg
+  }
+  argo-workflow: {
+    icon: https://icon.icepanel.io/Technology/svg/Argo-CD.svg
+  }
+}
+
+user -> cluster.repo-resource: 1. submits resource to cluster
+cluster.kyverno -> cluster.repo-resource: 2. ensures policy is matched
+cluster.repo-resource -> cluster.crossplane-github-controller
+cluster.crossplane-github-controller -> repo: 3. creates repo
+cluster.argo-events -> cluster.repo-resource: 4. listens for creation
+cluster.argo-events -> cluster.argo-workflow: 5. triggers workflow
+cluster.argo-workflow -> repo.action: 6. Github action triggered
+repo-template -> repo: used to populate repo {
+  style: {
+    stroke: green
+    opacity: 0.5
+    stroke-width: 2
+    stroke-dash: 5
+  }
+}

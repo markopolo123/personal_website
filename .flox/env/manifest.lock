@@ -1,0 +1,156 @@
+{
+  "lockfile-version": 0,
+  "manifest": {
+    "hook": {},
+    "install": {
+      "d2": {
+        "pkg-path": "d2"
+      },
+      "go-task": {
+        "pkg-path": "go-task"
+      },
+      "hugo": {
+        "pkg-path": "hugo"
+      }
+    },
+    "options": {
+      "systems": [
+        "aarch64-darwin"
+      ]
+    },
+    "profile": {},
+    "registry": {
+      "defaults": {
+        "subtrees": null
+      },
+      "inputs": {
+        "nixpkgs": {
+          "from": {
+            "owner": "NixOS",
+            "ref": "release-23.11",
+            "repo": "nixpkgs",
+            "type": "github"
+          },
+          "subtrees": [
+            "legacyPackages"
+          ]
+        }
+      },
+      "priority": [
+        "nixpkgs"
+      ]
+    },
+    "vars": {}
+  },
+  "packages": {
+    "aarch64-darwin": {
+      "d2": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "d2"
+        ],
+        "info": {
+          "broken": false,
+          "description": "A modern diagram scripting language that turns text to diagrams",
+          "license": "MPL-2.0",
+          "pname": "d2",
+          "unfree": false,
+          "version": "0.6.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1712735478,
+            "narHash": "sha256-EV0bJ+VlG93/4nLYjFy5nvDPP/vB2ZoWYJX2AzI/QHM=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "a48721e9b7a55253eb0a4d79b6806e97f11a9c77",
+            "type": "github"
+          },
+          "fingerprint": "ccdc45283fab60b0b21d81dc8228d35b6f60b33b7e4b8fcf616d97e8606b1299",
+          "url": "github:NixOS/nixpkgs/a48721e9b7a55253eb0a4d79b6806e97f11a9c77"
+        },
+        "priority": 5
+      },
+      "go-task": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "go-task"
+        ],
+        "info": {
+          "broken": false,
+          "description": "A task runner / simpler Make alternative written in Go",
+          "license": "MIT",
+          "pname": "go-task",
+          "unfree": false,
+          "version": "3.31.0"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1712735478,
+            "narHash": "sha256-EV0bJ+VlG93/4nLYjFy5nvDPP/vB2ZoWYJX2AzI/QHM=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "a48721e9b7a55253eb0a4d79b6806e97f11a9c77",
+            "type": "github"
+          },
+          "fingerprint": "ccdc45283fab60b0b21d81dc8228d35b6f60b33b7e4b8fcf616d97e8606b1299",
+          "url": "github:NixOS/nixpkgs/a48721e9b7a55253eb0a4d79b6806e97f11a9c77"
+        },
+        "priority": 5
+      },
+      "hugo": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "hugo"
+        ],
+        "info": {
+          "broken": false,
+          "description": "A fast and modern static website engine",
+          "license": "Apache-2.0",
+          "pname": "hugo",
+          "unfree": false,
+          "version": "0.120.3"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1712735478,
+            "narHash": "sha256-EV0bJ+VlG93/4nLYjFy5nvDPP/vB2ZoWYJX2AzI/QHM=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "a48721e9b7a55253eb0a4d79b6806e97f11a9c77",
+            "type": "github"
+          },
+          "fingerprint": "ccdc45283fab60b0b21d81dc8228d35b6f60b33b7e4b8fcf616d97e8606b1299",
+          "url": "github:NixOS/nixpkgs/a48721e9b7a55253eb0a4d79b6806e97f11a9c77"
+        },
+        "priority": 5
+      }
+    }
+  },
+  "registry": {
+    "defaults": {
+      "subtrees": null
+    },
+    "inputs": {
+      "nixpkgs": {
+        "from": {
+          "lastModified": 1712735478,
+          "narHash": "sha256-EV0bJ+VlG93/4nLYjFy5nvDPP/vB2ZoWYJX2AzI/QHM=",
+          "owner": "NixOS",
+          "repo": "nixpkgs",
+          "rev": "a48721e9b7a55253eb0a4d79b6806e97f11a9c77",
+          "type": "github"
+        },
+        "subtrees": [
+          "legacyPackages"
+        ]
+      }
+    },
+    "priority": [
+      "nixpkgs"
+    ]
+  }
+}

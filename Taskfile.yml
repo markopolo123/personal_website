@@ -1,0 +1,24 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+  generate-images:
+    cmds:
+      - echo "Generating images..."
+    silent: true
+  generate-svgs:
+    cmds:
+      - |
+        find . -name '*.d2' | while read -r file; do
+          d2 "$file" "${file%.d2}.svg"
+        done
+    desc: Generate images from D2 files
+    silent: true

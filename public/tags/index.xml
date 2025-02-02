@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mark&#39;s Blog</title>
+    <link>http://localhost:64460/tags/</link>
+    <description>Recent content in Tags on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>mysite_2025_getintouch@sharpley.xyz (Mark S)</managingEditor>
+    <webMaster>mysite_2025_getintouch@sharpley.xyz (Mark S)</webMaster>
+    <copyright>© 2025 Mark S</copyright>
+    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:64460/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:64460/tags/about/</link>
+      <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      <author>mysite_2025_getintouch@sharpley.xyz (Mark S)</author>
+      <guid>http://localhost:64460/tags/about/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>http://localhost:64460/tags/first/</link>
+      <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      <author>mysite_2025_getintouch@sharpley.xyz (Mark S)</author>
+      <guid>http://localhost:64460/tags/first/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>New</title>
+      <link>http://localhost:64460/tags/new/</link>
+      <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      <author>mysite_2025_getintouch@sharpley.xyz (Mark S)</author>
+      <guid>http://localhost:64460/tags/new/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>http://localhost:64460/tags/welcome/</link>
+      <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      <author>mysite_2025_getintouch@sharpley.xyz (Mark S)</author>
+      <guid>http://localhost:64460/tags/welcome/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

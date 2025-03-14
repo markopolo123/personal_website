@@ -3,7 +3,7 @@
 version: "3"
 
 vars:
-  GREETING: Hello, World!
+  CONTENT: "./content/posts"
 
 tasks:
   default:
@@ -22,3 +22,7 @@ tasks:
         done
     desc: Generate images from D2 files
     silent: true
+  new-post:
+    desc: Create a new blog post
+    cmds:
+      - ./scripts/newPost.sh {{.CONTENT}}

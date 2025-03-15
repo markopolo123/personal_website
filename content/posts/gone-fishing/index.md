@@ -150,6 +150,9 @@ abbrieviations are a way to have fish replace words with other words.
 You'd be right, but there are some differences. `abbr` shows the **full** command in your history,
 which is super handy and abbreviations are not expanded in scripts.
 
+
+### Moving up multiple directories
+
 Here's an `abbr` for moving up two parent directories:
 
 ```fish

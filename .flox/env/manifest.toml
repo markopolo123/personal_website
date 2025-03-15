@@ -20,6 +20,7 @@ d2.pkg-path = "d2"
 hugo.pkg-path = "hugo"
 hugo.version = "0.140.2"
 gum.pkg-path = "gum"
+gnused.pkg-path = "gnused"
 # gum.pkg-path = "gum"
 # gum.version = "^0.14.5"
 

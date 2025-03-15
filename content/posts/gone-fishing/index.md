@@ -29,6 +29,7 @@ of zsh profiling tools, plugin management frameworks and the like. Truly, this i
 the `ancien` zsh plugin manager.
 
 My plugins:
+
 ```zsh
 antigen bundle git
 antigen bundle fzf
@@ -122,7 +123,10 @@ for me. However, I've used BASH for over twenty years. I'm institutionalised.
 
 Here's a few helpers to make life a bit more bareable.
 
-#### !!
+#### Last history item
+
+In BASH you can use `!!` to bring up the last history item. Here's a similar implemention
+for Fish:
 
 ```fish
 ➜  cat functions/last_history_item.fish

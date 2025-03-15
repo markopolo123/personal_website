@@ -1,156 +1,624 @@
 {
-  "lockfile-version": 0,
+  "lockfile-version": 1,
   "manifest": {
-    "hook": {},
+    "version": 1,
     "install": {
       "d2": {
         "pkg-path": "d2"
       },
+      "gnused": {
+        "pkg-path": "gnused"
+      },
       "go-task": {
         "pkg-path": "go-task"
       },
+      "gum": {
+        "pkg-path": "gum"
+      },
       "hugo": {
-        "pkg-path": "hugo"
+        "pkg-path": "hugo",
+        "version": "0.140.2"
       }
     },
+    "hook": {},
+    "profile": {},
     "options": {
       "systems": [
-        "aarch64-darwin"
-      ]
-    },
-    "profile": {},
-    "registry": {
-      "defaults": {
-        "subtrees": null
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
       },
-      "inputs": {
-        "nixpkgs": {
-          "from": {
-            "owner": "NixOS",
-            "ref": "release-23.11",
-            "repo": "nixpkgs",
-            "type": "github"
-          },
-          "subtrees": [
-            "legacyPackages"
-          ]
-        }
-      },
-      "priority": [
-        "nixpkgs"
-      ]
-    },
-    "vars": {}
-  },
-  "packages": {
-    "aarch64-darwin": {
-      "d2": {
-        "attr-path": [
-          "legacyPackages",
-          "aarch64-darwin",
-          "d2"
-        ],
-        "info": {
-          "broken": false,
-          "description": "A modern diagram scripting language that turns text to diagrams",
-          "license": "MPL-2.0",
-          "pname": "d2",
-          "unfree": false,
-          "version": "0.6.1"
-        },
-        "input": {
-          "attrs": {
-            "lastModified": 1712735478,
-            "narHash": "sha256-EV0bJ+VlG93/4nLYjFy5nvDPP/vB2ZoWYJX2AzI/QHM=",
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "a48721e9b7a55253eb0a4d79b6806e97f11a9c77",
-            "type": "github"
-          },
-          "fingerprint": "ccdc45283fab60b0b21d81dc8228d35b6f60b33b7e4b8fcf616d97e8606b1299",
-          "url": "github:NixOS/nixpkgs/a48721e9b7a55253eb0a4d79b6806e97f11a9c77"
-        },
-        "priority": 5
-      },
-      "go-task": {
-        "attr-path": [
-          "legacyPackages",
-          "aarch64-darwin",
-          "go-task"
-        ],
-        "info": {
-          "broken": false,
-          "description": "A task runner / simpler Make alternative written in Go",
-          "license": "MIT",
-          "pname": "go-task",
-          "unfree": false,
-          "version": "3.31.0"
-        },
-        "input": {
-          "attrs": {
-            "lastModified": 1712735478,
-            "narHash": "sha256-EV0bJ+VlG93/4nLYjFy5nvDPP/vB2ZoWYJX2AzI/QHM=",
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "a48721e9b7a55253eb0a4d79b6806e97f11a9c77",
-            "type": "github"
-          },
-          "fingerprint": "ccdc45283fab60b0b21d81dc8228d35b6f60b33b7e4b8fcf616d97e8606b1299",
-          "url": "github:NixOS/nixpkgs/a48721e9b7a55253eb0a4d79b6806e97f11a9c77"
-        },
-        "priority": 5
-      },
-      "hugo": {
-        "attr-path": [
-          "legacyPackages",
-          "aarch64-darwin",
-          "hugo"
-        ],
-        "info": {
-          "broken": false,
-          "description": "A fast and modern static website engine",
-          "license": "Apache-2.0",
-          "pname": "hugo",
-          "unfree": false,
-          "version": "0.120.3"
-        },
-        "input": {
-          "attrs": {
-            "lastModified": 1712735478,
-            "narHash": "sha256-EV0bJ+VlG93/4nLYjFy5nvDPP/vB2ZoWYJX2AzI/QHM=",
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "a48721e9b7a55253eb0a4d79b6806e97f11a9c77",
-            "type": "github"
-          },
-          "fingerprint": "ccdc45283fab60b0b21d81dc8228d35b6f60b33b7e4b8fcf616d97e8606b1299",
-          "url": "github:NixOS/nixpkgs/a48721e9b7a55253eb0a4d79b6806e97f11a9c77"
-        },
-        "priority": 5
-      }
+      "semver": {}
     }
   },
-  "registry": {
-    "defaults": {
-      "subtrees": null
+  "packages": [
+    {
+      "attr_path": "d2",
+      "broken": false,
+      "derivation": "/nix/store/c4c8f6v41xsiyiyfivn7cfdcama99mdl-d2-0.6.8.drv",
+      "description": "Modern diagram scripting language that turns text to diagrams",
+      "install_id": "d2",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "d2-0.6.8",
+      "pname": "d2",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.6.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jwjxksy2kjxm9bx4xwgl64mksnjkq9sk-d2-0.6.8"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
     },
-    "inputs": {
-      "nixpkgs": {
-        "from": {
-          "lastModified": 1712735478,
-          "narHash": "sha256-EV0bJ+VlG93/4nLYjFy5nvDPP/vB2ZoWYJX2AzI/QHM=",
-          "owner": "NixOS",
-          "repo": "nixpkgs",
-          "rev": "a48721e9b7a55253eb0a4d79b6806e97f11a9c77",
-          "type": "github"
-        },
-        "subtrees": [
-          "legacyPackages"
-        ]
-      }
+    {
+      "attr_path": "d2",
+      "broken": false,
+      "derivation": "/nix/store/fpik2rxg9f53340z5na7mnwyvkj7gp7w-d2-0.6.8.drv",
+      "description": "Modern diagram scripting language that turns text to diagrams",
+      "install_id": "d2",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "d2-0.6.8",
+      "pname": "d2",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.6.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bxm8708p3gs4vda4v99lcxfrddhajd6m-d2-0.6.8"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
     },
-    "priority": [
-      "nixpkgs"
-    ]
-  }
+    {
+      "attr_path": "d2",
+      "broken": false,
+      "derivation": "/nix/store/qp5g6bvl2n22x2nv712sw5v0ikbarv1s-d2-0.6.8.drv",
+      "description": "Modern diagram scripting language that turns text to diagrams",
+      "install_id": "d2",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "d2-0.6.8",
+      "pname": "d2",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.6.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pv72cpx66a0nnbyzsfynljphi3xa5vir-d2-0.6.8"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "d2",
+      "broken": false,
+      "derivation": "/nix/store/an8a1r53jsmkwy7jm3ar8njnaq36qqaj-d2-0.6.8.drv",
+      "description": "Modern diagram scripting language that turns text to diagrams",
+      "install_id": "d2",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "d2-0.6.8",
+      "pname": "d2",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.6.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bdp6armgxf9pc7m5raflzdmk755qbmhi-d2-0.6.8"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnused",
+      "broken": false,
+      "derivation": "/nix/store/az1cdl5ksxryz7l4ilp8v1ny0vprm9h3-gnused-4.9.drv",
+      "description": "GNU sed, a batch stream editor",
+      "install_id": "gnused",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "gnused-4.9",
+      "pname": "gnused",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/073ln0j547wm3qi99rxvh7fch2785f0b-gnused-4.9-info",
+        "out": "/nix/store/dzbxz3pglzhwnz01475xqj6p8y0rdm78-gnused-4.9"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnused",
+      "broken": false,
+      "derivation": "/nix/store/60p302clx59xslwp17lwj3nain41lq7s-gnused-4.9.drv",
+      "description": "GNU sed, a batch stream editor",
+      "install_id": "gnused",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "gnused-4.9",
+      "pname": "gnused",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/0qclnxdj8cwq29ci4v823yg97qrp5qy9-gnused-4.9-info",
+        "out": "/nix/store/6pa7svcbi274plssghalx3r74yfcifyb-gnused-4.9"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnused",
+      "broken": false,
+      "derivation": "/nix/store/8izlrn0gihpxjmvk6y18vr51njf9sacb-gnused-4.9.drv",
+      "description": "GNU sed, a batch stream editor",
+      "install_id": "gnused",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "gnused-4.9",
+      "pname": "gnused",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/2cm944r482arjhigqf8d57g7mjvjs9jx-gnused-4.9-info",
+        "out": "/nix/store/hcvxqmyc982vn270mwax66yrpcaksrrl-gnused-4.9"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnused",
+      "broken": false,
+      "derivation": "/nix/store/agypfwjnanv8z97niiyicac2jy7n9ar9-gnused-4.9.drv",
+      "description": "GNU sed, a batch stream editor",
+      "install_id": "gnused",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "gnused-4.9",
+      "pname": "gnused",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/b1hz7ddg08fyq81jj88x9wblpggls2i2-gnused-4.9-info",
+        "out": "/nix/store/abm77lnrkrkb58z6xp1qwjcr1xgkcfwm-gnused-4.9"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "go-task",
+      "broken": false,
+      "derivation": "/nix/store/28ckkwy4i53i98p28yc0kc2r14z5g35i-go-task-3.40.1.drv",
+      "description": "Task runner / simpler Make alternative written in Go",
+      "install_id": "go-task",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "go-task-3.40.1",
+      "pname": "go-task",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.40.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/aixfgx140ck769fgd62w2jn6zr0rpjap-go-task-3.40.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "go-task",
+      "broken": false,
+      "derivation": "/nix/store/d6y3jicm39lhibirigz3yfi634f948z5-go-task-3.40.1.drv",
+      "description": "Task runner / simpler Make alternative written in Go",
+      "install_id": "go-task",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "go-task-3.40.1",
+      "pname": "go-task",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.40.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/221dfg78szgn8sy0schr2yrxi0ksg7az-go-task-3.40.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "go-task",
+      "broken": false,
+      "derivation": "/nix/store/qfqwqi0vjlsm7waqz960hhilvih62yg2-go-task-3.40.1.drv",
+      "description": "Task runner / simpler Make alternative written in Go",
+      "install_id": "go-task",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "go-task-3.40.1",
+      "pname": "go-task",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.40.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/yrfn4jmxsw16ngmgxslff18nrf7h1xy5-go-task-3.40.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "go-task",
+      "broken": false,
+      "derivation": "/nix/store/xdaima4zlskxb71wq7q3dsb3r7941gmd-go-task-3.40.1.drv",
+      "description": "Task runner / simpler Make alternative written in Go",
+      "install_id": "go-task",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "go-task-3.40.1",
+      "pname": "go-task",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.40.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/66bmnhrlh62vxflw0siz8s7i5pff7i7j-go-task-3.40.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gum",
+      "broken": false,
+      "derivation": "/nix/store/0lxr3l6jxkvc1ckrjs65bkmr6wkm12ib-gum-0.14.5.drv",
+      "description": "Tasty Bubble Gum for your shell",
+      "install_id": "gum",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "gum-0.14.5",
+      "pname": "gum",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.14.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/p87f1zvabjckkam5f8p5n8s0p9dy2z8d-gum-0.14.5"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gum",
+      "broken": false,
+      "derivation": "/nix/store/flfac2jgxzw1zx2xk81w322qyzzbsni3-gum-0.14.5.drv",
+      "description": "Tasty Bubble Gum for your shell",
+      "install_id": "gum",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "gum-0.14.5",
+      "pname": "gum",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.14.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/i8ks7qinadmk77dmknnrpi4iczv8p8gj-gum-0.14.5"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gum",
+      "broken": false,
+      "derivation": "/nix/store/5jaz36kssi10wjrsasi7wxf3rj9854hm-gum-0.14.5.drv",
+      "description": "Tasty Bubble Gum for your shell",
+      "install_id": "gum",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "gum-0.14.5",
+      "pname": "gum",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.14.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1s4jc1kmqksngyhanl76iibb19b7sd2v-gum-0.14.5"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gum",
+      "broken": false,
+      "derivation": "/nix/store/mjp6pldbmq5d6q0cl8brimzf0h3fdqpz-gum-0.14.5.drv",
+      "description": "Tasty Bubble Gum for your shell",
+      "install_id": "gum",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "gum-0.14.5",
+      "pname": "gum",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.14.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/z96hiw9h45mph9qilm4hp4j4ncf19qbl-gum-0.14.5"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hugo",
+      "broken": false,
+      "derivation": "/nix/store/l9b1x4in17bb5w2lfm75aqb1kf78wzq0-hugo-0.140.2.drv",
+      "description": "Fast and modern static website engine",
+      "install_id": "hugo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "hugo-0.140.2",
+      "pname": "hugo",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.140.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/99qng10gjfhj2nw0mq2wabicym862abg-hugo-0.140.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hugo",
+      "broken": false,
+      "derivation": "/nix/store/pdbx7ymld3xsjpqpv1cfpq8ayii70kkm-hugo-0.140.2.drv",
+      "description": "Fast and modern static website engine",
+      "install_id": "hugo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "hugo-0.140.2",
+      "pname": "hugo",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.140.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/i3akr4y3g4rdg5w64q8pis69drz02ayl-hugo-0.140.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hugo",
+      "broken": false,
+      "derivation": "/nix/store/hy8mk3ilgj2xy7jgr108ywx135bkbg62-hugo-0.140.2.drv",
+      "description": "Fast and modern static website engine",
+      "install_id": "hugo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "hugo-0.140.2",
+      "pname": "hugo",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.140.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ml5dbdn7cs77fz47sr5fklafidg609ln-hugo-0.140.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hugo",
+      "broken": false,
+      "derivation": "/nix/store/fgbz6xl3ih29a2a54hzvcxsfdzk98p0m-hugo-0.140.2.drv",
+      "description": "Fast and modern static website engine",
+      "install_id": "hugo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "name": "hugo-0.140.2",
+      "pname": "hugo",
+      "rev": "5df43628fdf08d642be8ba5b3625a6c70731c19c",
+      "rev_count": 738982,
+      "rev_date": "2025-01-16T21:27:11Z",
+      "scrape_date": "2025-01-18T00:14:56Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.140.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6yvswihirak2nyj52w37mm0m3lrwvkvm-hugo-0.140.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
 }
